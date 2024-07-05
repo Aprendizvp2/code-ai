@@ -15,7 +15,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface CustomDrawerProps {
-  mobileOpen: boolean;
+  mobileOpen?: boolean;
   handleDrawerClose: () => void;
 }
 
@@ -59,6 +59,11 @@ export const CustomDrawer = ({
                   minHeight: 48,
                   justifyContent: mobileOpen ? "initial" : "center",
                   px: 2.5,
+                  transition: "all 0.5s ease",
+                  "&:hover": {
+                    backgroundColor: "black",
+                    border: "1px solid white",
+                  },
                 }}
               >
                 <ListItemIcon
@@ -84,6 +89,11 @@ export const CustomDrawer = ({
                 minHeight: 48,
                 justifyContent: mobileOpen ? "initial" : "center",
                 px: 2.5,
+                transition: "all 0.5s ease",
+                "&:hover": {
+                  backgroundColor: "black",
+                  border: "1px solid white",
+                },
               }}
             >
               <ListItemIcon
@@ -104,6 +114,11 @@ export const CustomDrawer = ({
                 minHeight: 48,
                 justifyContent: mobileOpen ? "initial" : "center",
                 px: 2.5,
+                "&:hover": {
+                  backgroundColor: "black",
+                  border: "1px solid white",
+                  transition: "all 0.5s ease",
+                },
               }}
             >
               <ListItemIcon

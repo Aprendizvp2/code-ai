@@ -6,7 +6,9 @@ function Login() {
   return (
     <div className="bg-[#1b1b1b] h-screen flex flex-col justify-center items-center">
       <div className="flex flex-col items-center justify-center text-center flex-grow">
-        <p className="text-white text-2xl md:text-3xl lg:text-8xl">Welcome to</p>
+        <p className="text-white text-2xl md:text-3xl lg:text-8xl">
+          Welcome to
+        </p>
         <p className="text-white text-2xl md:text-3xl lg:text-8xl font-bold mb-8">
           AI CODE
         </p>
@@ -17,6 +19,7 @@ function Login() {
           <MicrosoftIcon /> Login with Microsoft
         </button>
         <CustomTextField placeholder="Login with email" fullWidth />
+        <a href="/chat" className="py-4 text-white">Go to chat</a>
       </div>
       <div className="mt-auto text-center pb-4">
         <p className="text-white text-sm">
